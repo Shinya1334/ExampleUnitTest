@@ -1,12 +1,12 @@
 package jp.ac.uryukyu.ie.e185740;
 
 public class LivingThing {
-    String name;
-    int hitPoint;
-    int attack;
-    boolean dead;
+    private String name;
+    private int hitPoint;
+    private int attack;
+    private boolean dead;
 
-    public LivingThing(String name, int maximumHP, int attack){
+    LivingThing(String name, int maximumHP, int attack){
         this.name = name;
         this.hitPoint = maximumHP;
         this.attack = attack;
@@ -14,15 +14,29 @@ public class LivingThing {
 
     }
 
-    public boolean isDead() {
+    boolean isDead() {
         return  dead;
     }
 
-    public String getName() {
+    void  setDead(boolean dead)
+    {
+        this.dead = dead;
+    }
+
+    String getName() {
         return name;
     }
 
-    public void attack(LivingThing opponent)
+    int getHitPoint()
+    {
+        return hitPoint;
+    }
+    void setHitPoint(int hitPoint)
+    {
+        this.hitPoint = hitPoint;
+    }
+
+    void attack(LivingThing opponent)
     {
         if (!isDead()) {
             int damage = (int) (Math.random() * attack);
