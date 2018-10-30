@@ -10,7 +10,7 @@ package jp.ac.uryukyu.ie.e185740;
  */
 class Hero {
     private String name;
-    private int hitPoint;
+     int hitPoint;
     private int attack;
     private boolean dead;
 

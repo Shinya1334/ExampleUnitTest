@@ -9,10 +9,10 @@ package jp.ac.uryukyu.ie.e185740;
  * Created by tnal on 2016/11/13.
  */
 class Enemy {
-    private String name;
-    private int hitPoint;
-    private int attack;
-    private boolean dead;
+    String name;
+    int hitPoint;
+    int attack;
+    boolean dead;
 
     /**
      * コンストラクタ。名前、最大HP、攻撃力を指定する。
